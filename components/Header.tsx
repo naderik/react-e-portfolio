@@ -1,140 +1,130 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
+import React, { useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import logo from "../public/images/kasra.png";
+import Button from "react-bootstrap/Button";
+import { CgGitFork } from "react-icons/cg";
+import { ImBlog } from "react-icons/im";
+import {
+    AiFillStar,
+    AiOutlineHome,
+    AiOutlineFundProjectionScreen,
+    AiOutlineUser,
+} from "react-icons/ai";
+import { useRouter } from "next/router";
 
-const pages = ['Resume', 'Projects', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard'];
+import { CgFileDocument } from "react-icons/cg";
 
-const Header = () => {
-    const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-    const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+function NavBar() {
+    const [expand, updateExpanded] = useState(false);
+    const [navColour, updateNavbar] = useState(false);
+    const router = useRouter();
 
-    const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorElUser(event.currentTarget);
-    };
 
-    const handleCloseNavMenu = () => {
-        setAnchorElNav(null);
-    };
+    const handleClick = () => {
+        router.push("/")
+    }
 
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
+    function scrollHandler() {
+        if (typeof window !== "undefined" && window.scrollY >= 20) {
+            updateNavbar(true);
+        } else {
+            updateNavbar(false);
+        }
+    }
+
+    if (typeof window !== "undefined") {
+        window.addEventListener("scroll", scrollHandler);
+    }
 
     return (
-        <AppBar position="static">
-            <Container maxWidth="xl">
-                <Toolbar disableGutters>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="div"
-                        sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-                    >
-                        Kasra Naderi
-                    </Typography>
+        <Navbar
+            expanded={expand}
+            fixed="top"
+            expand="md"
+            className={navColour ? "sticky" : "navbar"}
+        >
+            <Container>
+                <Navbar.Brand href="/" className="d-flex">
+                    {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
+                </Navbar.Brand>
+                <Navbar.Toggle
+                    aria-controls="responsive-navbar-nav"
+                    onClick={() => {
+                        updateExpanded(expand ? false : "expanded");
+                    }}
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </Navbar.Toggle>
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="ms-auto" defaultActiveKey="#home">
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                            </Nav.Link>
+                        </Nav.Item>
 
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                        <IconButton
-                            size="large"
-                            aria-label="account of current user"
-                            aria-controls="menu-appbar"
-                            aria-haspopup="true"
-                            onClick={handleOpenNavMenu}
-                            color="inherit"
-                        >
-                            <MenuIcon />
-                        </IconButton>
-                        <Menu
-                            id="menu-appbar"
-                            anchorEl={anchorElNav}
-                            anchorOrigin={{
-                                vertical: 'bottom',
-                                horizontal: 'left',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'left',
-                            }}
-                            open={Boolean(anchorElNav)}
-                            onClose={handleCloseNavMenu}
-                            sx={{
-                                display: { xs: 'block', md: 'none' },
-                            }}
-                        >
-                            {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
-                                </MenuItem>
-                            ))}
-                        </Menu>
-                    </Box>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="div"
-                        sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-                    >
-                        LOGO
-                    </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map((page) => (
-                            <Button
-                                key={page}
-                                onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block' }}
+                        <Nav.Item>
+                            <Nav.Link
+                                as={Link}
+                                to="/about"
+                                onClick={() => updateExpanded(false)}
                             >
-                                {page}
-                            </Button>
-                        ))}
-                    </Box>
+                                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                            </Nav.Link>
+                        </Nav.Item>
 
-                    <Box sx={{ flexGrow: 0 }}>
-                        <Tooltip title="Open settings">
-                            <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                <Avatar alt="Kasra's NextGem NFT" src="/public/images/kasra.jpg" />
-                            </IconButton>
-                        </Tooltip>
-                        <Menu
-                            sx={{ mt: '45px' }}
-                            id="menu-appbar"
-                            anchorEl={anchorElUser}
-                            anchorOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                                vertical: 'top',
-                                horizontal: 'right',
-                            }}
-                            open={Boolean(anchorElUser)}
-                            onClose={handleCloseUserMenu}
-                        >
-                            {settings.map((setting) => (
-                                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography textAlign="center">{setting}</Typography>
-                                </MenuItem>
-                            ))}
-                        </Menu>
-                    </Box>
-                </Toolbar>
+                        <Nav.Item>
+                            <Nav.Link
+                                as={Link}
+                                to="/project"
+                                onClick={() => updateExpanded(false)}
+                            >
+                                <AiOutlineFundProjectionScreen
+                                    style={{ marginBottom: "2px" }}
+                                />{" "}
+                                Projects
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link
+                                as={Link}
+                                to="/resume"
+                                onClick={() => updateExpanded(false)}
+                            >
+                                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link
+                                href="https://blogs.soumya-jit.tech/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item className="fork-btn">
+                            <Button
+                                href="https://github.com/soumyajit4419/Portfolio"
+                                target="_blank"
+                                className="fork-btn-inner"
+                            >
+                                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                                <AiFillStar style={{ fontSize: "1.1em" }} />
+                            </Button>
+                        </Nav.Item>
+                    </Nav>
+                </Navbar.Collapse>
             </Container>
-        </AppBar>
+        </Navbar>
     );
-};
-export default Header;
+}
+
+export default NavBar;
