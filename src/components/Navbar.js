@@ -6,9 +6,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 function Navbar() {
     const [expandNav, setExpandNav] = React.useState(false);
     const location = useLocation();
+
     React.useEffect(() => {
         setExpandNav(false);
     }, [location]);
+
     return (
         <div className='navbar' id={expandNav ? "open" : "close"}>
             <div className='toggleButton'>
