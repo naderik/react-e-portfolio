@@ -2,12 +2,12 @@ import React from 'react'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
-
+import '../styles/Footer.css'
 
 function Footer() {
     return (
         <div className='footer'>
-            <div>
+            <div className='socialMedia'>
                 <GitHubIcon />
                 <LinkedInIcon />
                 <TwitterIcon />
