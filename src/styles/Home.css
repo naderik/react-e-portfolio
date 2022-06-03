@@ -5,6 +5,11 @@
     color: #C5DA8D;
 }
 
+.about svg {
+    font-size: 100px;
+    cursor: pointer;
+}
+
 .about {
     width: 100%;
     height: calc(100vh - 100px);

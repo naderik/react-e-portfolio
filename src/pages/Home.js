@@ -8,7 +8,7 @@ function Home() {
     return (
         <div className="home">
             <div className="about">
-                <h2> Hi, My Name is Kasra</h2>
+                <h2> Hello, I'm Kasra! 👨🏻‍💻 </h2>
                 <div className="prompt">
                     <p>A software developer with a passion for learning and creating.</p>
                     <LinkedInIcon />
@@ -16,7 +16,7 @@ function Home() {
                     <GithubIcon />
                 </div>
             </div>
-            <div className="skills">
+            {/* <div className="skills">
                 <h1> Skills</h1>
                 <ol className="list">
                     <li className="item">
@@ -38,7 +38,7 @@ function Home() {
                         <span>JavaScript, Java, Python, C#, C, C++, TypeScript, Go</span>
                     </li>
                 </ol>
-            </div>
+            </div> */}
         </div>
     );
 }
