@@ -5,9 +5,10 @@
     color: #C5DA8D;
 }
 
-.about svg {
+.about span {
     font-size: 100px;
-    cursor: pointer;
+    padding: 0;
+    margin: 0;
 }
 
 .about {
