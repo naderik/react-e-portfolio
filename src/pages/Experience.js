@@ -10,60 +10,67 @@ import WorkIcon from "@mui/icons-material/Work";
 function Experience() {
   return (
     <div className="experience">
-      <VerticalTimeline lineColor="#3e497a">
-        <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="2010 - 2014"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
-          icon={<SchoolIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            My Random High School, Random Place, Random State
-          </h3>
-          <p> High School Diploma</p>
-        </VerticalTimelineElement>
+      <VerticalTimeline lineColor="#0F343E">
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2014 - 2018"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          contentStyle={{ background: "#0F343E", color: "#C5DA8D" }}
+          iconStyle={{ background: "#0F343E", color: "#C5DA8D" }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            My Cool University, Vancouver, British Columbia
+            Islamic Azad University
           </h3>
-
           <h4 className="vertical-timeline-element-subtitle">
             Bachelor's Degree
           </h4>
+          <p>IT Engineering</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="2020 - 2021"
+          contentStyle={{ background: "#0F343E", color: "#C5DA8D" }}
+          iconStyle={{ background: "#0F343E", color: "#C5DA8D" }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            University of Windsor
+          </h3>
 
-          <p> Computer Science</p>
+          <h4 className="vertical-timeline-element-subtitle">
+            Master's Degree
+          </h4>
+
+          <p> Applied Computing </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2018 - 2020"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          date="2020 - 2021"
+          contentStyle={{ background: "#0F343E", color: "#C5DA8D" }}
+          iconStyle={{ background: "#0F343E", color: "#C5DA8D" }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Back End Engineer - Google
+            Software Developer - University of Windsor
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
+            Windsor, Ontario
           </h4>
           <p>Developed the backend infrastructure for 3 projects.</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2020 - present"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          date="2021 - present"
+          contentStyle={{ background: "#0F343E", color: "#C5DA8D" }}
+          iconStyle={{ background: "#0F343E", color: "#C5DA8D" }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Full Stack Engineer - Twitch
+            Full Stack Developer - Yuser Inc.
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
+            London, Ontario
           </h4>
           <p>
             Helped the team launch 2 major features by working both in the front
@@ -71,7 +78,7 @@ function Experience() {
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
-    </div>
+    </div >
   );
 }
 

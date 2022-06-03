@@ -38,7 +38,8 @@
 .prompt svg {
     font-size: 60px;
     margin: 5px;
-    color: #EBD86D;
+    color: #C5DA8D;
+    cursor: pointer;
 }
 
 .skills {
