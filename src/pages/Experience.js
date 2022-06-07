@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
+import StarIcon from '@mui/icons-material/Star';
 
 function Experience() {
   return (
@@ -77,6 +78,10 @@ function Experience() {
             end and back end.
           </p>
         </VerticalTimelineElement>
+        <VerticalTimelineElement
+          iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+          icon={<StarIcon />}
+        />
       </VerticalTimeline>
     </div >
   );
