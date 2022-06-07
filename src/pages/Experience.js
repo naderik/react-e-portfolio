@@ -7,6 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 import StarIcon from '@mui/icons-material/Star';
+import Colors from "../data/Colors";
 
 function Experience() {
   return (
@@ -15,8 +16,8 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2021 - present"
-          contentStyle={{ background: "#0F343E", color: "#C5DA8D" }}
-          iconStyle={{ background: "#0F343E", color: "#C5DA8D" }}
+          contentStyle={{ background: Colors.darkest, color: Colors.middle }}
+          iconStyle={{ background: Colors.darkest, color: Colors.middle }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -33,8 +34,8 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2020 - 2021"
-          contentStyle={{ background: "#0F343E", color: "#C5DA8D" }}
-          iconStyle={{ background: "#0F343E", color: "#C5DA8D" }}
+          contentStyle={{ background: Colors.darkest, color: Colors.middle }}
+          iconStyle={{ background: Colors.darkest, color: Colors.middle }}
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -49,16 +50,16 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2020 - 2021"
-          contentStyle={{ background: "#0F343E", color: "#C5DA8D" }}
-          iconStyle={{ background: "#0F343E", color: "#C5DA8D" }}
+          contentStyle={{ background: Colors.darkest, color: Colors.middle }}
+          iconStyle={{ background: Colors.darkest, color: Colors.middle }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            University of Windsor
+            Master's Degree
           </h3>
 
           <h4 className="vertical-timeline-element-subtitle">
-            Master's Degree
+            University of Windsor
           </h4>
 
           <p> Applied Computing </p>
@@ -66,23 +67,23 @@ function Experience() {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2014 - 2018"
-          contentStyle={{ background: "#0F343E", color: "#C5DA8D" }}
-          iconStyle={{ background: "#0F343E", color: "#C5DA8D" }}
+          contentStyle={{ background: Colors.darkest, color: Colors.middle }}
+          iconStyle={{ background: Colors.darkest, color: Colors.middle }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Islamic Azad University
+            Bachelor's Degree
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Bachelor's Degree
+            Islamic Azad University
           </h4>
           <p>IT Engineering</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="2010 - 2014"
-          contentStyle={{ background: "#0F343E", color: "#C5DA8D" }}
-          iconStyle={{ background: "#0F343E", color: "#C5DA8D" }}
+          contentStyle={{ background: Colors.darkest, color: Colors.middle }}
+          iconStyle={{ background: Colors.darkest, color: Colors.middle }}
           icon={<SchoolIcon />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -94,7 +95,8 @@ function Experience() {
           <p>Mathematics</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+          className="vertical-timeline-element"
+          iconStyle={{ background: Colors.darkest, color: Colors.middle }}
           icon={<StarIcon />}
         />
       </VerticalTimeline>
