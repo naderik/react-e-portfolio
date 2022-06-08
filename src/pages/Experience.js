@@ -67,7 +67,7 @@ function Experience() {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2020 - 2021"
+          date="2015 - 2017"
           contentStyle={{ background: Colors.darkest, color: Colors.middle }}
           iconStyle={{ background: Colors.darkest, color: Colors.middle }}
           icon={<BiotechIcon />}
