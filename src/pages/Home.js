@@ -1,7 +1,7 @@
 import React from "react";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-import GithubIcon from "@mui/icons-material/GitHub";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import "../styles/Home.css";
 
 function Home() {
@@ -12,9 +12,9 @@ function Home() {
                 </h2>
                 <div className="prompt">
                     <p>A software developer with a passion for learning and creating.</p>
-                    <LinkedInIcon />
-                    <EmailIcon />
-                    <GithubIcon />
+                    <a href='https://linkedin.com/in/naderik' target="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
+                    <a href='mailto:naderi.kasra@gmail.com' target="_blank" rel="noopener noreferrer"><EmailIcon /></a>
+                    <a href='https://github.com/naderik' target="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
                 </div>
             </div>
             {/* <div className="skills">
