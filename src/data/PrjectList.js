@@ -4,6 +4,6 @@ export const ProjectList = [
   {
     name: "E- Portfolio Website",
     image: Proj1,
-    skills: "React, HTML, CSS, MaterialUI, npm",
+    skills: "React, HTML, CSS, MaterialUI",
   },
 ];
