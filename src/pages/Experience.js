@@ -27,8 +27,7 @@ function Experience() {
             London, Ontario
           </h4>
           <p>
-            Helped the team launch 2 major features by working both in the front
-            end and back end.
+            Worked on cutting-edge industry frameworks, technologies, and design patterns to develop core components of a decentralized social network including a mobile application, a web application, cloud functionalities, and blockchain integration. Collaborated effectively with end-users, developers, senior management, and key stakeholders to understand organizational goals and act accordingly.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -44,7 +43,7 @@ function Experience() {
           <h4 className="vertical-timeline-element-subtitle">
             Windsor, Ontario
           </h4>
-          <p>Developed the backend infrastructure for 3 projects.</p>
+          <p>Developed a mobile application that provides an offline platform for those who are suffering inside a disaster and facing internet connectivity issues as a team of developers.</p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
