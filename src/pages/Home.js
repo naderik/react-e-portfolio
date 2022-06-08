@@ -9,7 +9,6 @@ function Home() {
         <div className="home">
             <div className="about">
                 <h2> Hello, I'm Kasra!
-                    <span role="img" aria-label="developer">👨🏻‍💻</span>
                 </h2>
                 <div className="prompt">
                     <p>A software developer with a passion for learning and creating.</p>
