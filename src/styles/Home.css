@@ -1,17 +1,13 @@
 .home {
     width: 100%;
     align-items: center;
-    font-family: "Arial", sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     color: #C5DA8D;
 }
 
-.about span {
-    font-size: 100px;
-    padding: 0;
-    margin: 0;
-}
-
 .about {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 900;
     width: 100%;
     height: calc(100vh - 100px);
     display: flex;
@@ -24,7 +20,8 @@
 }
 
 .about h2 {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
     font-size: 80px;
     color: #EBD86D;
     height: 50px;
