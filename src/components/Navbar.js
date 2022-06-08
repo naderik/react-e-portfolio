@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import '../styles/Navbar.css'
 import MenuIcon from '@mui/icons-material/Menu';
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
 
 function Navbar() {
     const [expandNav, setExpandNav] = React.useState(false);
@@ -25,7 +26,7 @@ function Navbar() {
                 <Link to='/'>Home</Link>
                 <Link to='/experience'>Experience</Link>
                 <Link to='/projects'>Projects</Link>
-                <Link to="/files/KasraNaderiResume.pdf" target="_blank" download>Resume</Link>
+                <Link to="/files/KasraNaderiResume.pdf" target="_blank" download>Resume<FileDownloadIcon className='downloadIcon' /></Link>
             </div>
         </div>
     )
