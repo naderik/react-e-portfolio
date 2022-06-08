@@ -1,21 +1,9 @@
-import Proj1 from "../assets/Proj1.webp";
-import Proj2 from "../assets/Proj2.webp";
-import Proj3 from "../assets/Proj3.webp";
+import Proj1 from "../assets/Proj1.png";
 
 export const ProjectList = [
   {
-    name: "Dijkstra Algorithm Visualizer",
+    name: "E- Portfolio Website",
     image: Proj1,
-    skills: "JavaScript,HTML,CSS",
-  },
-  {
-    name: "Ecommerce Website",
-    image: Proj2,
-    skills: "React,Node.js,MongoDB",
-  },
-  {
-    name: "Spotify Clone",
-    image: Proj3,
-    skills: "React,Node.js,MongoDB,SpotifyAPI",
+    skills: "React, HTML, CSS, MaterialUI, npm",
   },
 ];
