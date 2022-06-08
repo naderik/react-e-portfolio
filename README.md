@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Personal E-Portfolio Developed using ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This personal e-portfolio has been bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
