@@ -7,7 +7,9 @@ import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 import StarIcon from '@mui/icons-material/Star';
+import BiotechIcon from '@mui/icons-material/Biotech';
 import Colors from "../data/Colors";
+import "../styles/Experience.css";
 
 function Experience() {
   return (
@@ -62,6 +64,25 @@ function Experience() {
           </h4>
 
           <p> Applied Computing </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2020 - 2021"
+          contentStyle={{ background: Colors.darkest, color: Colors.middle }}
+          iconStyle={{ background: Colors.darkest, color: Colors.middle }}
+          icon={<BiotechIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Research Assistant
+          </h3>
+
+          <h4 className="vertical-timeline-element-subtitle">
+            Islamic Azad University
+          </h4>
+          <a href="https://www.sciencedirect.com/science/article/pii/S0378437119306314"><h4>Article Link</h4></a>
+          <p>
+            • Coordinated as a part of a group of researchers to create a new method that improves the performance of a certain type of recommender system based on neighboring users. and published the results as an ISI article
+            • Successfully experimented with the method on MovieLens and Jester datasets and obtained eye-catching results </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
