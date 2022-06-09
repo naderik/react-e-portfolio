@@ -2,4 +2,4 @@
 
 ### [Demo](http://www.naderik.info)
 
-## Personal E-Portfolio developed using React and MaterialUI, and hosted on Heroku.
+## Personal E-Portfolio developed using React and MaterialU and hosted on Heroku.
