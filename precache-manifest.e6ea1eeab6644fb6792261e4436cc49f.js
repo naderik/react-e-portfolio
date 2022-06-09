@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/e-portfolio/static/media/titillium-web-latin-ext-400-normal.ca974545.woff2"
   },
   {
-    "revision": "0ef99cf07a2a261ab43d5dc1937ffb27",
-    "url": "/e-portfolio/static/media/titillium-web-latin-400-normal.0ef99cf0.woff2"
-  },
-  {
     "revision": "f6b4a4c0ae99563f0234681157481231",
     "url": "/e-portfolio/static/media/titillium-web-all-400-normal.f6b4a4c0.woff"
+  },
+  {
+    "revision": "0ef99cf07a2a261ab43d5dc1937ffb27",
+    "url": "/e-portfolio/static/media/titillium-web-latin-400-normal.0ef99cf0.woff2"
   },
   {
     "revision": "2b4a3c9332bf4575edc28facb59b6fda",
