@@ -14,7 +14,7 @@ function Navbar() {
 
     return (
         <div className='navbar' id={expandNav ? "open" : "close"}>
-            <div data-testid="toggleButton" className='toggleButton'>
+            <div className='toggleButton'>
                 <button onClick={
                     () => {
                         setExpandNav((prev) => !prev)

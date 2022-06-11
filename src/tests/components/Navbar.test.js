@@ -11,6 +11,5 @@ describe("Navbar", () => {
             </Router>
         );
     });
-    expect(screen.getByTestId("toggleButton")).toBeInTheDocument();
 }
 );
