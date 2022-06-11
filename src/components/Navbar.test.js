@@ -6,6 +6,6 @@ describe("Navbar", () => {
         render(<Navbar />);
     }
     );
-    expect(screen.getByText("Home")).toBeInTheDocument();
+    expect(screen.getByTestId("navbar")).toBeInTheDocument();
 }
 );
