@@ -8,7 +8,9 @@ describe("Navbar", () => {
         render(
             <Router>
                 <Navbar />
-            </Router>);
+            </Router>
+        );
     });
+    expect(screen.getByTestId("toggleButton")).toBeInTheDocument();
 }
 );
