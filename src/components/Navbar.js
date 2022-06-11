@@ -13,7 +13,7 @@ function Navbar() {
     }, [location]);
 
     return (
-        <div className='navbar' id={expandNav ? "open" : "close"}>
+        <div data-testid="navbar" className='navbar' id={expandNav ? "open" : "close"}>
             <div className='toggleButton'>
                 <button onClick={
                     () => {
