@@ -1,6 +1,10 @@
 {
   "name": "e-portfolio",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.x",
+    "npm": "8.x"
+  },
   "homepage": "https://naderik.github.io/e-portfolio",
   "private": true,
   "dependencies": {
