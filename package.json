@@ -5,7 +5,6 @@
     "node": "16.x",
     "npm": "8.x"
   },
-  "homepage": "https://naderik.github.io/e-portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
