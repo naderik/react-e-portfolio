@@ -44,5 +44,8 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "react-test-renderer": "^18.1.0"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   }
 }
