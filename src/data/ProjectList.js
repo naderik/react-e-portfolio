@@ -6,13 +6,13 @@ export const ProjectList = [
   {
     name: "React Personal E-Portfolio",
     image: Proj1,
-    skills: "Javasript, React, HTML, CSS, MaterialUI",
+    skills: "Javasript, React, MaterialUI",
     github: "https://www.github.com/naderik/react-e-portfolio",
   },
   {
     name: "Bootstrap Personal E-Portfolio",
     image: Proj2,
-    skills: "Javascript, jQuery, HTML, CSS, Bootstrap",
+    skills: "Javascript, jQuery, Bootstrap",
     github: "https://www.github.com/naderik/naderik.github.io",
   },
   {
